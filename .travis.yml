@@ -1,11 +1,12 @@
 dist: trusty
-  node_js:
-  - stable
-  branches:
-    only: development
-  notifications:
-    email:
-      recipients:
-      - karimifazlu50@gmail.com      # change to your own address
-      on_success: never        # default: change
-      on_failure: always       # default: always
+language: node_js
+node_js:
+- stable
+branches:
+  only: development
+notifications:
+
+  email: karimifazlu50@gmail.com
+    on_success: never        # default: change
+    on_failure: always       # default: always
+
